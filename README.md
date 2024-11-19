@@ -1,0 +1,1 @@
+Implemantation has been done without dao layer and dto's, check of working was done by test class. In comercial projects good practise is a squash commits(to better visibility of commits history after merge) before it is merged and create a feature/bugfix branch with PR to target branch which can be reviewed by others teams members.
