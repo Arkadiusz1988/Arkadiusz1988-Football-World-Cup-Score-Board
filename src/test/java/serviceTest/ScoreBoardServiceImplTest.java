@@ -93,7 +93,7 @@ public class ScoreBoardServiceImplTest {
 
         List<String> summary = scoreBoard.getSummary();
 
-        assertEquals("Game2 2 - 2 TeamB", summary.get(0)); // Most recently added
+        assertEquals("Game2 2 - 2 TeamB", summary.get(0));
         assertEquals("Game1 2 - 2 TeamA", summary.get(1));
     }
 }

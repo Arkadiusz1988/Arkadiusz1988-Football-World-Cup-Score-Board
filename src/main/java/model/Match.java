@@ -24,7 +24,7 @@ public class Match {
     }
 
     public int getMatchOrder() {
-        return matchOrder; // Zwracamy numer porządkowy
+        return matchOrder;
     }
 
     public String getHomeTeam() {
