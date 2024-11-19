@@ -5,14 +5,13 @@ public class Match {
     private final String awayTeam;
     private int homeScore;
     private int awayScore;
-    private final long timestamp;
-
-    public Match(String homeTeam, String awayTeam) {
+    private int matchOrder;
+    public Match(String homeTeam, String awayTeam,int matchOrder) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
         this.homeScore = 0;
         this.awayScore = 0;
-        this.timestamp = System.currentTimeMillis();
+        this.matchOrder = matchOrder; 
     }
 
     public void updateScore(int homeScore, int awayScore) {
@@ -24,8 +23,8 @@ public class Match {
         return homeScore + awayScore;
     }
 
-    public long getTimestamp() {
-        return timestamp;
+    public int getMatchOrder() {
+        return matchOrder; // Zwracamy numer porządkowy
     }
 
     public String getHomeTeam() {

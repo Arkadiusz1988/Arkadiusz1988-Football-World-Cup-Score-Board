@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="862bb684-a08d-4f17-8e87-548b71829d4f" name="Changes" comment="initial commit" />
+    <list default="true" id="862bb684-a08d-4f17-8e87-548b71829d4f" name="Changes" comment="model and interface for service added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/ScoreBoardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/serviceTest/ScoreBoardServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ScoreBoardServiceImplTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="UML Sequence" />
+        <option value="UML Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,6 +41,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultPlantUmlFileTemplate": "UML Class",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
@@ -37,6 +55,62 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.ScoreBoardServiceImplTest">
+    <configuration name="ScoreBoardServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Football-World-Cup-Score-Board" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="serviceTest.ScoreBoardServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreBoardServiceImplTest.testGetSummarySortedByTotalScoreAndTimestamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Football-World-Cup-Score-Board" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="serviceTest.ScoreBoardServiceImplTest" />
+      <option name="METHOD_NAME" value="testGetSummarySortedByTotalScoreAndTimestamp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreBoardServiceImplTest.testGetSummaryWithSameTotalScoreOrdersByTimestamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Football-World-Cup-Score-Board" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="serviceTest.ScoreBoardServiceImplTest" />
+      <option name="METHOD_NAME" value="testGetSummaryWithSameTotalScoreOrdersByTimestamp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ScoreBoardServiceImplTest" />
+        <item itemvalue="JUnit.ScoreBoardServiceImplTest.testGetSummaryWithSameTotalScoreOrdersByTimestamp" />
+        <item itemvalue="JUnit.ScoreBoardServiceImplTest.testGetSummarySortedByTotalScoreAndTimestamp" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,6 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732038536349</updated>
       <workItem from="1732038538090" duration="1056000" />
+      <workItem from="1732039609528" duration="2397000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -55,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732039052117</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="uml diagram added">
+      <option name="closed" value="true" />
+      <created>1732040361015</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732040361015</updated>
+    </task>
+    <task id="LOCAL-00003" summary="model and interface for service added">
+      <option name="closed" value="true" />
+      <created>1732040644351</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732040644351</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,6 +165,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="uml diagram added" />
+    <MESSAGE value="model and interface for service added" />
+    <option name="LAST_COMMIT_MESSAGE" value="model and interface for service added" />
   </component>
 </project>
