@@ -1,0 +1,35 @@
+@startuml
+interface ScoreBoardService {
+    + startGame(String homeTeam, String awayTeam)
+    + finishGame(String homeTeam, String awayTeam)
+    + updateScore(String homeTeam, String awayTeam, int homeScore, int awayScore)
+    + getSummary(): List<String>
+}
+
+class ScoreBoardServiceImpl {
+    - matches: List<Match>
+    + startGame(String homeTeam, String awayTeam)
+    + finishGame(String homeTeam, String awayTeam)
+    + updateScore(String homeTeam, String awayTeam, int homeScore, int awayScore)
+    + getSummary(): List<String>
+    - findMatch(String homeTeam, String awayTeam): Match
+}
+
+class Match {
+    - homeTeam: String
+    - awayTeam: String
+    - homeScore: int
+    - awayScore: int
+    - timestamp: long
+    + Match(String homeTeam, String awayTeam)
+    + updateScore(int homeScore, int awayScore)
+    + getTotalScore(): int
+    + getTimestamp(): long
+    + getHomeTeam(): String
+    + getAwayTeam(): String
+    + toString(): String
+}
+
+ScoreBoardService <|.. ScoreBoardServiceImpl
+ScoreBoardServiceImpl --> Match
+@enduml
